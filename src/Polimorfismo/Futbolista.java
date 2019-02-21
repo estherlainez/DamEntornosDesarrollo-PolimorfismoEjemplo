@@ -1,7 +1,17 @@
 package Polimorfismo;
 
-public class Futbolista extends SeleccionFutbol {
 
+/**
+ * @author IFC
+ * @version
+ */
+public class Futbolista extends SeleccionFutbol {
+/**
+ * 
+ * Este campo represente el numero que lleva el jugador en la camiseta en la espalda
+ * 
+ * */
+ 
 	private int dorsal;
 	private String demarcacion;
 
@@ -9,6 +19,15 @@ public class Futbolista extends SeleccionFutbol {
 		super();
 	}
 
+	/**
+	 * @param id
+	 * @param nombre
+	 * @param apellidos
+	 * @param edad
+	 * @param dorsal
+	 * @param demarcacion
+	 * 
+	 */
 	public Futbolista(int id, String nombre, String apellidos, int edad, int dorsal, String demarcacion) {
 		super(id, nombre, apellidos, edad);
 		this.dorsal = dorsal;
