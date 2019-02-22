@@ -5,6 +5,8 @@ package Polimorfismo;
  * @author IFC
  * @version
  */
+
+
 public class Futbolista extends SeleccionFutbol {
 /**
  * 
@@ -20,6 +22,7 @@ public class Futbolista extends SeleccionFutbol {
 	}
 
 	/**
+	 * Informacion del deportista
 	 * @param id
 	 * @param nombre
 	 * @param apellidos
@@ -38,6 +41,10 @@ public class Futbolista extends SeleccionFutbol {
 		return dorsal;
 	}
 
+	/**
+	 * muestra numero del jugador
+	 * @param dorsal
+	 */
 	public void setDorsal(int dorsal) {
 		this.dorsal = dorsal;
 	}
@@ -49,12 +56,16 @@ public class Futbolista extends SeleccionFutbol {
 	public void setDemarcacion(String demarcacion) {
 		this.demarcacion = demarcacion;
 	}
-
+	/**
+	 * muestra un entrenamiento
+	 */
 	@Override
 	public void entrenamiento() {
 		System.out.println("Realiza un entrenamiento (Clase Futbolista)");
 	}
-
+	/**
+	 * modificacion de un metodo que se repite en mas clases, override
+	 */
 	@Override
 	public void partidoFutbol() {
 		System.out.println("Juega un Partido (Clase Futbolista)");
